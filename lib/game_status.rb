@@ -60,9 +60,10 @@ end
 def winner(board)
   if won?(board).include?("X")
     return "X"
-  else won?(board).include?("O")
+  elsif won?(board).include?("O")
     return "O"
   end
+  nil
 end
 
   
