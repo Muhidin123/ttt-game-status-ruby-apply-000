@@ -64,7 +64,7 @@ def winner(board)
   if winner_move == false
     return false
   else
-    if board[winner_move][0] = "X"
+    if board[winner_move[0]] = "X"
       return "X"
     else
       "O"
