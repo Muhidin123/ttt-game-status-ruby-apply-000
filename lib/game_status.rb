@@ -61,12 +61,10 @@ end
 def winner(board)
   winner_move - []
   winner_move = won?(board)
-  if board[winner_move].include?("X")
-    return "X"
+  if winner_move == false
+    return false
   else
-    "O"
-  end
-end
+    
   
   
   
