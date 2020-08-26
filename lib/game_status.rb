@@ -57,8 +57,17 @@ def over?(board)
   false
 end
 
+
 def winner(board)
-  if winner_move = 
+  winner_move - []
+  winner_move = won?(board)
+  if board[winner_move].include?("X")
+    return "X"
+  else
+    "O"
+  end
+end
+  
   
   
 
