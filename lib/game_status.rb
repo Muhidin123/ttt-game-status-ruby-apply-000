@@ -63,15 +63,13 @@ def winner(board)
   winner_move = won?(board)
   if winner_move == false
     return nil
+  if board[winner_move].include?("X")
+    return "X"
   else
-    if board[winner_move[0]] == "X"
-      return "X"
-    else
-      "O"
-    end
+    "O"
   end
 end
-  
+
   
   
 
