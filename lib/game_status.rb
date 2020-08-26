@@ -59,7 +59,7 @@ end
 
 
 def winner(board)
-  winner_move - []
+  winner_move = []
   winner_move = won?(board)
   if winner_move == false
     return false
